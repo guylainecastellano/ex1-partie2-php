@@ -1,6 +1,6 @@
 <?php
 $age = 18;
-$a = 2;
+$a = 45;
 ?>
 <!DOCTYPE html>
 <html lang="fr" dir="ltr">
@@ -12,12 +12,12 @@ $a = 2;
   <p>
     <?php
     if ($a > $age) {
-  echo $a."Vous êtes majeur".$age;
-} else if ($a == $age) {
-  echo $a."Vous êtes majeur".$age;
-} else ($a < $age) {
-  echo $a."Vous êtes mineur".$age;
-endif;
+  echo "Vous êtes majeur";
+}  if ($a == $age) {
+  echo "Vous êtes majeur";
+} if ($a < $age) {
+  echo "Vous êtes mineur";
+
   }
     ?>
   </p>
