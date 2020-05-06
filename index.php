@@ -1,6 +1,6 @@
 <?php
-$object = 'Bonjour, '; //déclaration variable
-$message = 'en route pour une aventure'; //variable object et message
+$age = 18;
+$a = 2;
 ?>
 <!DOCTYPE html>
 <html lang="fr" dir="ltr">
@@ -11,11 +11,15 @@ $message = 'en route pour une aventure'; //variable object et message
 <body>
   <p>
     <?php
-    echo $object; //affiche la variable $object / $message
-    echo $message;
+    if ($a > $age) {
+  echo $a."Vous êtes majeur".$age;
+} else if ($a == $age) {
+  echo $a."Vous êtes majeur".$age;
+} else ($a < $age) {
+  echo $a."Vous êtes mineur".$age;
+endif;
+  }
     ?>
   </p>
-  <p><?php echo $object . $message; ?></p> <!--ou-->
-  <p><?= $object . $message; ?></p> <!--version raccourci-->
 </body>
 </html>
